@@ -46,6 +46,17 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
             ],[
+            InlineKeyboardButton('🔊CHANNEL🔊', url='https://t.me/+uTA_ibAsyWU4OGE1')
+            ],[
+            InlineKeyboardButton('💬GROUP💬', url='https://t.me/+uTA_ibAsyWU4OGE1')
+            ],[
+            InlineKeyboardButton('🆘 Help 🆘', callback_data='help'),
+            InlineKeyboardButton('🤠 About 🤠', callback_data='about')
+        ]]
+            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ],[
+            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
+            ],[
             InlineKeyboardButton('🔊CHANNEL🔊', url='https://t.me/+uTA_ibAsyWU4OGE1'),
             InlineKeyboardButton('💬GROUP💬', url='https://t.me/moviespot001100')
             ],[
@@ -90,10 +101,13 @@ async def start(client, message):
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
             ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('🔊CHANNEL🔊', url='https://t.me/+uTA_ibAsyWU4OGE1')
+            ],[
+            InlineKeyboardButton('💬GROUP💬', url='https://t.me/+uTA_ibAsyWU4OGE1')
+            ],[
+            InlineKeyboardButton('🆘 Help 🆘', callback_data='help'),
+            InlineKeyboardButton('🤠 About 🤠', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
