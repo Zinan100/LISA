@@ -38,7 +38,7 @@ async def save_group(bot, message):
             return
         buttons = [[
             InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('📢 Updates', url='https://t.me/TeamEvamaria')
+            InlineKeyboardButton('📢 Updates', url='https://t.me/+uTA_ibAsyWU4OGE1')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -53,7 +53,18 @@ async def save_group(bot, message):
                         await (temp.MELCOW['welcome']).delete()
                     except:
                         pass
-                temp.MELCOW['welcome'] = await message.reply(f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>")
+                temp.MELCOW['welcome'] = await message.reply(f"<b>👋 Hi  {mention} Welcome To {chatname}
+
+📱Google/imdb യിൽ Check ചെയ്തതിനു ശേഷം മാത്രം ഗ്രൂപ്പിൽ Request ഇടുക📱
+
+1⃣ Request In This Format 👇
+
+Eg : Titanic  ✅
+        Titanic 1997 ✅
+        Titanic English Movie ❌
+        Titanic English Movie Undo ❌
+        Titanic English Movie kitto ❌
+")
 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
