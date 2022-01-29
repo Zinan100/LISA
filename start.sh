@@ -4,7 +4,7 @@ then
   git clone https://github.com/Zinan100/LISA.git /lisa
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /EvaMaria
+  git clone $UPSTREAM_REPO /lisa
 fi
 cd /EvaMaria
 pip3 install -U -r requirements.txt
